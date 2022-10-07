@@ -3,7 +3,7 @@ name: 'ZJU-nCov-Hitcarder Action'
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 22 * * *'
+    - cron: '0 17 * * *'
 
 jobs:
   main:
@@ -35,6 +35,19 @@ jobs:
             dingtalk_token: DINGTALK_TOKEN
             pushplus_token: PUSHPLUS_TOKEN
             serverchan_key: SERVERCHAN_KEY
+                        
+          - username: ZJU_USERNAMEYL
+            password: ZJU_PASSWORDYL
+            dingtalk_token: DINGTALK_TOKEN
+            pushplus_token: PUSHPLUS_TOKEN
+            serverchan_key: SERVERCHAN_KEY
+                        
+          - username: ZJU_USERNAMELLF
+            password: ZJU_PASSWORDLLF
+            dingtalk_token: DINGTALK_TOKEN
+            pushplus_token: PUSHPLUS_TOKEN
+            serverchan_key: SERVERCHAN_KEY
+            
     steps:
       - name: Checkout
         uses: actions/checkout@v2
